@@ -5,7 +5,7 @@ import {
 import appRoutes from './shared/appRoutes';
 
 import HomePage from './containers/HomePage/HomePage';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
