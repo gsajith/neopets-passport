@@ -28,10 +28,10 @@ const WorldDetailsPage = (props) => {
 
   const { handleClose, stampPassport, stampedLocations } = props;
 
-  let numStamped = 0;
+  let numStamped = 6;
   Object.values(stampedLocations).forEach((stampedLocation) => {
-    if (stampedLocation === true) {
-      numStamped += 1;
+    if (stampedLocation === false) {
+      numStamped -= 1;
     }
   });
 
