@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "91b2057bc4c01046a8d5fec756cbc9a2",
+    "revision": "1e01625885faff76d5eee85479cd2563",
     "url": "/neopets-passport/index.html"
   },
   {
-    "revision": "69235142b624fcbed445",
+    "revision": "5dfa2342543c3c4a6d22",
     "url": "/neopets-passport/static/css/main.9a53b142.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/neopets-passport/static/js/2.dfb6712c.chunk.js"
   },
   {
-    "revision": "69235142b624fcbed445",
-    "url": "/neopets-passport/static/js/main.2c640fec.chunk.js"
+    "revision": "5dfa2342543c3c4a6d22",
+    "url": "/neopets-passport/static/js/main.cf8e0ad5.chunk.js"
   },
   {
     "revision": "9c0851698a76a05b8a53",

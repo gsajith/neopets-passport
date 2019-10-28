@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/neopets-passport/precache-manifest.7ab929a83ca8b0348622079ab236ee0a.js"
+  "/neopets-passport/precache-manifest.96a72d9a4bc546ff2dc3575df4a69de6.js"
 );
 
 self.addEventListener('message', (event) => {
