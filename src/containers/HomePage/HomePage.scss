@@ -2,10 +2,11 @@ $tile-size: 15vmin;
 
 body {
   background: radial-gradient(50% 128% at 50% 50%, #000000 0%, #100742 100%);
+  overflow-y: hidden;
 }
 
 .worldBackground {
-  max-height: 100vh;
+  height: 100vmin;
   position: absolute;
   top: 0;
   margin-left: auto;
@@ -14,21 +15,39 @@ body {
   right: 0;
 }
 
+.passportContainer {
+  position: absolute;
+  right: 25px;
+  bottom: 20px;
+  outline: none;
+
+  img {
+    cursor: pointer;
+    transition-duration: 200ms;
+
+    &:hover {
+      transform: translate(5px, -5px) scale(1.1);
+    }
+  }
+}
+
 .navigationContainer {
   z-index: 1;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: auto;
-  margin-top: calc(50vmin - #{$tile-size} * 2.5);
-  height: calc(#{$tile-size} * 5);
-  width: calc(#{$tile-size} * 5);
+  margin-top: calc(50vmin - #{$tile-size} * 2.625);
+  height: calc(#{$tile-size} * 5.25);
+  width: calc(#{$tile-size} * 5.25);
 }
 
 .navigationItemContainer {
   z-index: 1;
   width: $tile-size;
   height: $tile-size;
+  margin: $tile-size * .025;
+  outline: none;
 }
 
 .tilt {
@@ -69,6 +88,7 @@ body {
   width: 100%;
   height: 100%;
   visibility: visible;
+  border: 1px solid white;
   -webkit-transform: rotate(-60deg);
      -moz-transform: rotate(-60deg);
       -ms-transform: rotate(-60deg);
@@ -77,6 +97,7 @@ body {
   transition: box-shadow 200ms ease-in-out;
   box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.6), 1px 2px 3px rgba(255, 255, 255, 0.4), 0px 0px 1px #000000;
 }
-.hexagon-in2:hover {
+.hexagon-in2:hover, .navigationitemContainer:focus .hexagon-in2 {
+  border: 1px solid rgba(255, 0, 0, 0.6);
   box-shadow: 1px 1px 20px rgba(255, 0, 0, 0.6), 1px 2px 3px rgba(255, 255, 255, 0.4), 0px 0px 1px #000000;
 }

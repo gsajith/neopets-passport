@@ -1,4 +1,6 @@
 export default {
   home: '/',
-  world: '/world/:id',
+  worldDetails: '/world',
+  worldDetail: '/world/:id',
+  passport: '/passport',
 };

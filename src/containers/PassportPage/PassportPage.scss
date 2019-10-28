@@ -1,0 +1,157 @@
+@import "../../shared/variables";
+
+.passportPageContainer {
+  z-index: 4;
+  width: 100vw;
+  height: 100vh;
+
+  .passportImage {
+    margin: auto;
+  }
+
+  .successBg {
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(255,254,6,1) 0%, rgba(255,194,0,0.3267682072829131) 47%, rgba(0,212,255,0) 85%);
+    z-index: -1;
+    position: absolute;
+    top: 0;
+  }
+
+  .successText {
+    color: white;
+    font-weight: 900;
+    color: $yellow;
+    text-shadow: 2px 2px 0px black;
+    font-family: Ranchers;
+    letter-spacing: 2;
+    font-size: 30px;
+    width: 20vw;
+    position: absolute;
+    top: 30px;
+    left: calc(50% - 10vw);
+  }
+
+  .stamp {
+    position: absolute;
+    width: 130px;  
+    height: 130px;
+    object-fit: cover;
+    border: 1px solid black;
+
+    &.faerieland {
+      transform: rotate(8deg);
+      top: 73px;
+      left: calc((100vw - 890px)/2 + 200px);
+    }
+
+    &.lostdesert {
+      transform: rotate(8deg);
+      top: 253px;
+      left: calc((100vw - 890px)/2 + 170px);
+    }
+
+    &.mysteryisland {
+      transform: rotate(8deg);
+      top: 420px;
+      left: calc((100vw - 890px)/2 + 145px);
+    }
+
+    &.terrormountain {
+      transform: rotate(-8deg);
+      top: 80px;
+      left: calc((100vw - 890px)/2 + 580px);
+    }
+
+    &.tyrannia {
+      transform: rotate(-8deg);
+      top: 265px;
+      left: calc((100vw - 890px)/2 + 605px);
+    }
+
+    &.vss {
+      transform: rotate(-8deg);
+      top: 435px;
+      left: calc((100vw - 890px)/2 + 628px);
+    }
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .passportPageContainer {
+
+    .stamp {
+      width: 15vw;
+      height: 15vw;
+
+      &.faerieland {
+        top: 8vw;
+        left: 22vw;
+      }
+
+      &.lostdesert {
+        top: 27.7vw;
+        left: 19vw;
+      }
+
+      &.mysteryisland {
+        top: 47vw;
+        left: 16.3vw;
+      }
+
+      &.terrormountain {
+        top: 8.5vw;
+        left: 65vw;
+      }
+
+      &.tyrannia {
+        top: 29vw;
+        left: 67.5vw;
+      }
+
+      &.vss {
+        top: 48vw;
+        left: 70vw;
+      }
+    }
+  }
+}
+
+.button {
+  padding: 15px;
+  border-radius: 6px;
+  transition-duration: 200ms;
+  cursor: pointer;
+
+  img {
+    margin: 0;
+    margin-right: 10px;
+    display: inline-block;
+  }
+
+  &:hover {
+    transform: translate(5px, -5px);
+    box-shadow: -5px 5px 0px white;
+  }
+}
+
+.closePassportButton {
+  background: $blue;
+  color: white;
+  font-weight: 900;
+  position: absolute;
+  left: 10vw;
+}
+
+.resetPassportButton {
+  background: white;
+  border: 3px solid red;
+  position: absolute;
+  font-weight: 900;
+  color: black;
+  right: 10vw;
+
+  &:hover {
+    box-shadow: -5px 5px 0px red;
+  }
+}
