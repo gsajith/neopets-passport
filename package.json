@@ -2,7 +2,6 @@
   "name": "neopets-passport",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://gsajith.github.io/neopets-passport",
   "dependencies": {
     "node-sass": "^4.12.0",
     "prop-types": "^15.7.2",
