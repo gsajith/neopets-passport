@@ -66,7 +66,7 @@ export default class App extends React.Component {
   stampPassport(id) {
     this.setState((prevState) => {
       const stampedLocations = { ...prevState.stampedLocations };
-      stampedLocations[id] = true;
+      stampedLocations[id] = Math.floor(Math.random() * 6);
       return { stampedLocations };
     }, () => {
       const { stampedLocations } = this.state;

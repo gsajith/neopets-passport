@@ -37,28 +37,27 @@
     width: 130px;  
     height: 130px;
     object-fit: cover;
-    border: 1px solid black;
 
     &.faerieland {
-      transform: rotate(8deg);
+      transform: rotate(10deg);
       top: 73px;
       left: calc((100vw - 890px)/2 + 200px);
     }
 
     &.lostdesert {
-      transform: rotate(8deg);
+      transform: rotate(6deg);
       top: 253px;
       left: calc((100vw - 890px)/2 + 170px);
     }
 
     &.mysteryisland {
-      transform: rotate(8deg);
+      transform: rotate(0deg);
       top: 420px;
       left: calc((100vw - 890px)/2 + 145px);
     }
 
     &.terrormountain {
-      transform: rotate(-8deg);
+      transform: rotate(-15deg);
       top: 80px;
       left: calc((100vw - 890px)/2 + 580px);
     }
@@ -70,7 +69,7 @@
     }
 
     &.vss {
-      transform: rotate(-8deg);
+      transform: rotate(-2deg);
       top: 435px;
       left: calc((100vw - 890px)/2 + 628px);
     }
