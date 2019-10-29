@@ -1,4 +1,40 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+# SSUI Assignment 6
+
+## Neopets Passport
+This is a travel page for the world of Neopia. from the popular children's website [http://neopets.com](http://www.neopets.com/).
+
+[The site is hosted here: https://elegant-goodall-eb68ab.netlify.com/](https://elegant-goodall-eb68ab.netlify.com/)
+
+Travel to 6 unique lands in Neopia including:
+- **Lost Desert:** A sacred desert based on Egyptian Mythology  
+- **Tyrannia:** A prehistoric region with dinosaurs  
+- **Faerieland:** A floating magical city home to tiny magical creatures known as faeries  
+- **Terror Mountain:** A snowy, treacherous mountain biome  
+- **Virtupets Space Station:** A futuristic space station that orbits Neopia  
+- **Mystery Island:** A tropical island location
+
+### Bonus features
+- At each location, **stamp your passport** to mark that you've visited.
+  - Stamped locations are **saved in your local storage** so the state stays consistent even if you refresh.
+  - Open your passport page (bottom left corner from world map) to **view locations you've stamped**.
+  - Once all 6 locations are visited, see a **special 'congrats!' message** on your passport page.
+  - **Reset your passport** to start over.
+ - Passport stamp images are **randomly chosen from a thematically consistent set**, so that each time you complete your passport it will look different!
+ - The following pages are **responsive**:
+   - World map page
+   - Passport page
+   - World details pages (to some extent)
+  - Implemented **modal animations** for each world details page, and for the passport page.
+    - Click outside the modal or press the close button to close the modal.
+   - Site is a one-page application, but each world location can also be accessed via ``/world/id`` sub-links, and the passport page can be accessed via ``/passport`` sub-link.
+	   - Haven't set this up on Netlify, but this should work when the site is cloned and built via Github.
+
+<img src="https://i.imgur.com/LDQ6BGV.png" alt="Map nof Neopia" width="500"/>
+<img src="https://i.imgur.com/mliFxlp.png" alt="World details page" width="500"/>
+<img src="https://i.imgur.com/wouhgq9.png" alt="Passport page button" width="500"/>
+<img src="https://i.imgur.com/FT9T1md.png" alt="Passport page" width="500"/>
+<img src="https://i.imgur.com/5sFciXe.png" alt="Stamped passport page" width="500"/>
 
 ## Available Scripts
 
@@ -25,44 +61,4 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
